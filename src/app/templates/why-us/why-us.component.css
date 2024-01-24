@@ -1,0 +1,13 @@
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* margin-left: -24rem; */
+}
+@media screen and (max-width: 600px) {
+}

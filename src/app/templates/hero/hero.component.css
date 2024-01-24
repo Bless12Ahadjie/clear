@@ -1,0 +1,29 @@
+section {
+  display: flex;
+  padding: 15px 0 0 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  overflow: hidden;
+  z-index: 999;
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container{
+  margin-top: -3.2rem;
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .container{
+    margin-top: 0;
+    flex-direction: column;
+    width: 600px;
+    gap: 20px;
+  }
+
+}

@@ -1,0 +1,45 @@
+<!-- accordion.component.html -->
+
+<div id="accordion-flush" data-accordion="collapse"
+  data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+  data-inactive-classes="text-gray-500 dark:text-gray-400">
+
+   @for (item of accordionItems; track $index) {
+    <ng-container>
+       <div >
+        <h2 [id]="'accordion-flush-heading-' + ($index + 1)">
+            <button type="button" id="head"
+            class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-accord-head border-b border-baccord dark:border-gray-700 dark:text-gray-400 gap-3"
+            [attr.data-accordion-target]="'#accordion-flush-body-' + ($index + 1)"
+            [attr.aria-expanded]="item.expanded"
+            [attr.aria-controls]="'accordion-flush-body-' + ($index + 1)"
+            (click)="toggleAccordion(item)">
+      <span>{{ item.heading }}</span>
+      @if (!item.expanded) {
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+              stroke="#98A2B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+      }@else {
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#98A2B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      }
+
+    </button>
+    
+        </h2>
+        <div [id]="'accordion-flush-body-' + ($index + 1)" [class.hidden]="!item.expanded"
+          [attr.aria-labelledby]="'accordion-flush-heading-' + ($index + 1)">
+          <div class="py-5 border-b border-baccord dark:border-gray-700">
+            <p class="mb-2 text-gray-500 dark:text-gray-400">{{ item.content }}</p>
+          </div>
+        </div>
+       </div>
+      </ng-container>
+    
+   }
+  
+</div>

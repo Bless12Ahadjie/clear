@@ -1,0 +1,136 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.top .txt-1 {
+  width: 600px;
+  color: var(--Gray-800, #1d2939);
+  font-size: 51px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: -1.28px;
+}
+.top .txt-2 {
+  width: 510px;
+  color: var(--Gray-500, #667085);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+button {
+  display: flex;
+  padding: 8px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  background: var(--Blue-700, #175cd3);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: var(--Base-White, #fff);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+.middle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.disco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.disco-txt {
+  color: var(--Blue-700, #175cd3);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 155.556% */
+}
+
+.down {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.avatar {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.av {
+  width: 40px;
+  height: 40px;
+}
+#shift {
+  margin-left: -1rem;
+}
+#top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.top p {
+  color: var(--Gray-700, #344054);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; 
+}
+.down p {
+  color: var(--Gray-600, #475467);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; 
+}
+
+@media screen and (max-width: 600px) {
+  section{
+    width: 100vw;
+    max-width: 100%;
+    padding: 0 26px;
+  }
+  .top .txt-1 {
+    /* width: 600px; */
+    color: var(--Gray-800, #1d2939);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+  }
+  .top .txt-2 {
+    width: 360px;
+    font-size: 18px;
+    font-weight: 200;
+  }
+  .middle {
+    flex-direction: column;
+
+  }
+}

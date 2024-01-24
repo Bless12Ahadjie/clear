@@ -1,0 +1,7 @@
+.container{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    max-width: 1200px;
+
+}

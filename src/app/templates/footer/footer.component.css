@@ -1,0 +1,122 @@
+section{
+    display: flex;
+padding: 96px 0px 48px 0px;
+flex-direction: column;
+align-items: center;
+gap: 64px;
+align-self: stretch;
+width: 100vw;
+max-width: 1200px;
+}
+.con{
+    display: flex;
+justify-content: center;
+align-items: flex-start;
+gap: 10px;
+}
+.left{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+}
+.logo{
+    display: flex;
+align-items: center;
+gap: 10px;
+}
+.logo p{
+    color: var(--Gray-900, #101828);
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.logo p span{
+    color: var(--Blue-dark-400, #528BFF);
+}
+.bottom p{
+    color: var(--Gray-600, #475467);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 155.556% */
+width: 340px;
+}
+.right{
+    display: flex;
+align-items: flex-start;
+gap: 12px;
+}
+.item{
+    
+    display: flex;
+    width: 160px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+}
+.item .top p {
+    color: var(--Gray-500, #667085);
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 150% */
+}
+.item .down p{
+    color: var(--Gray-600, #475467);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */
+}
+.final{display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+.final p{
+    color: var(--Blue-dark-700, #004EEB);
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 150% */
+}
+.final .down{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+}
+.nav{
+    display: flex;
+padding: 48px 0px;
+flex-direction: column;
+align-items: center;
+gap: 64px;
+width: 100vw;
+max-width: 1200px;
+align-self: stretch;
+background: var(--Gray-50, #F9FAFB);
+
+}
+
+nav .contain{
+    display: flex;
+align-items: center;
+gap: 502px;
+align-self: stretch;
+
+}
+.left p{
+    color: var(--Gray-500, #667085);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+}
+.right{
+    display: flex;
+align-items: center;
+gap: 24px;
+}
