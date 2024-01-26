@@ -26,7 +26,7 @@ section {
   align-items: stretch;
 
   color: var(--Gray-800, #1d2939);
-  font-size: 42px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 600;
   line-height: 60px; /* 125% */
@@ -43,7 +43,7 @@ section {
   position: absolute;
   z-index: 999;
   margin-left: 40%;
-  margin-top: 13%;
+  margin-top: 15%;
 }
 
 
