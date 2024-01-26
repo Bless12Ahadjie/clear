@@ -1,6 +1,6 @@
 .container{
 display: flex;
-width: 580px;
+width: 560px;
 align-items: column;
 align-content: column;
 flex-direction: row;
