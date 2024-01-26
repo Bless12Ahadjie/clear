@@ -23,7 +23,7 @@ gap: 40px;
 }
 .icon{
     display: flex;
-padding: 16px;
+padding: 12px;
 justify-content: center;
 align-items: center;
 gap: 10px;
