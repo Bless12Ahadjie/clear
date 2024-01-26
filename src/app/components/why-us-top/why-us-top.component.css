@@ -34,7 +34,7 @@ section {
 }
 .sub-head p {
   color: var(--Gray-500, #667085);
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 32px; ;
